@@ -94,8 +94,6 @@ describe(`
     pet2.setClassification({ type: 'cat', breed: 'persian' });
 
     assert.equal(person.presentation(), 'Hi, I\'m John Doe and my hobbies are reading, writing, coding');
-    console.log('NNN person2.presentation()', person2.presentation());
-    console.log('NNN comparation: ', person2.presentation() === 'Hi, I\'m Jane Doe and my hobbies are reading, writing, coding, cooking');
     assert.equal(person2.presentation(), 'Hi, I\'m Jane Doe and my hobbies are reading, writing, coding, cooking');
     assert.equal(pet.presentation(), 'My pet is a dog from the breed labrador and its name is Fido');
     assert.equal(pet2.presentation(), 'My pet is a cat from the breed persian and its name is Fifi');
